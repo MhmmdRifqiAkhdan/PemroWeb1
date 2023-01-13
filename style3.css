@@ -1,0 +1,16 @@
+#langkah{
+    overflow: hidden;
+    background: white;
+    padding: 30px 0;
+}
+#langkah h2{
+    padding:10px;
+}
+#langkah.kolom{
+   width: 190px;
+   margin: 10px;
+   padding: 0 30px 0 0;
+   float: left;
+   background: url("images/langkah.jpg") right top no-repeat;
+}
+#langkah .kolom :last-child{background:none;}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Objek</title>
+</head>
+<body>
+    <script language = "JavaScript" >
+        function perolehWarna() {
+            return(this.warna);
+        }
+        function ubahWarna (warna) {
+            this.warna = warna;
+        }
+        function tampilkanInfoMobil() {
+            document.write("Tipe : " + this.tipe + "<BR>");
+                document.write("Merk : " + this.merk + "<BR>");
+                    document.write("CC : " + this.cc + "<BR>");
+                        document.write("Warna : " + this.warna + "<BR>");
+        } 
+        function Mobil(tipe, merk, cc, warna){
+            // properti
+            this.tipe = tipe;
+            this.merk = merk;
+            this.cc = cc;
+            this.warna = warna;
+            // Metode
+            this.perolehWarna = perolehWarna;
+            this.ubahWarna = ubahWarna;
+            this.tampilkanInfoMobil = tampilkanInfoMobil;
+
+            // Membuat objek bedasarkan Mobil
+            var mobilku = new Mobil("Sidekick", "Suzuki", 1600, "Merah");
+            mobilku.tampilkanInfoMobil();
+            document.write("<HR>");
+            document.write(mobilku.tipe + "<BR>");
+            document.write(mobilku.tipe + "<BR>"); 
+
+        }
+
+    </script>
+</body>
+</html>
